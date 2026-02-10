@@ -10,7 +10,12 @@ body {
     color: #f7efe2;
 }
 
+#nav-logo {
+    height: 100px;
+}
+
 .navbar li {
     margin: 5px;
     display: inline-block;
+    color: #f7efe2;
 }

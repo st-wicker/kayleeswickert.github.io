@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Kaylee Swickert</title>
+        <title>{% block title %}Kaylee Swickert{% endblock %}</title>
         <link rel="stylesheet" href="static/styles.css" type="text/css">
     </head>
     <body>
@@ -10,7 +10,7 @@
                 <ul>
                     <li>
                         <a class="nav-link" href="{{ url_for('index') }}">
-                            <img src="static/logo.png">
+                            <img id="nav-logo" src="static/logo.png">
                         </a>
                     </li>
                     <li>
