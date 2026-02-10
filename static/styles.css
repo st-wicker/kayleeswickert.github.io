@@ -3,6 +3,9 @@ Color Palette
 
 black: #2e2e2e
 white: #f7efe2
+dark green: #3C896D
+light green: #4FB286
+orange: #DD6E42
 */
 
 body {
@@ -16,6 +19,10 @@ body {
 
 a {
     color: #f7efe2;
+}
+
+a:hover {
+    color: #DD6E42;
 }
 
 .navbar li {
