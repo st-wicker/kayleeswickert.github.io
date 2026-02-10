@@ -2,8 +2,15 @@
 Color Palette
 
 black: #2e2e2e
+white: #f7efe2
 */
 
 body {
     background-color: #2e2e2e;
+    color: #f7efe2;
+}
+
+.navbar li {
+    margin: 5px;
+    display: inline-block;
 }

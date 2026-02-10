@@ -10,25 +10,25 @@
                 <ul>
                     <li>
                         <a class="nav-link" href="{{ url_for('index') }}">
-                            <img src="/static/Logo II.png">
+                            <img src="static/logo.png">
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="{{ url_for('projects') }} " title="Click to access the calendar.">Projects</a>
+                        <a class="nav-link" href="templates/projects.html">Projects</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="{{  url_for('about') }}">About Me</a>
+                        <a class="nav-link" href="templates/about.html">About Me</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="{{  url_for('resume') }}">Resume</a>
+                        <a class="nav-link" href="templates/resume.html">Resume</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="{{  url_for('contact') }}">Contact</a>
+                        <a class="nav-link" href="templates/contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
 
-            <div>
+            <div class="page">
                 {% block body %}{% endblock %}
             </div>
         </div>
