@@ -1,16 +1,21 @@
 /*
 Color Palette
 
-black: #2e2e2e
-white: #f7efe2
-dark green: #3C896D
-light green: #4FB286
-orange: #DD6E42
+carbon-black: #171717
+black-forest: #003307
+lime: #00ff22
+dark-teal: #003333
+cyan: #00ffff
+dark-coffee: #331a00
+vivid-tangerine: #ff8000
+rich-mahogany: #330010
+hot-fuchsia: #ff0050
+antique-white: #ffeedd
 */
 
 body {
-    background-color: #2e2e2e;
-    color: #f7efe2;
+    background-color: #ffeedd;
+    color: #003333;
 }
 
 #nav-logo {
@@ -18,16 +23,16 @@ body {
 }
 
 a {
-    color: #f7efe2;
+    color: #00ffff;
 }
 
 a:hover {
-    color: #DD6E42;
+    color: #ff8000;
 }
 
 .navbar {
     width: 100%;
-    background-color: #3C896D;
+    background-color: #003333;
 }
 
 .navbar li {
@@ -35,5 +40,5 @@ a:hover {
     display: inline-block;
     font-family: monospace;
     font-size: 25px;
-    color: #f7efe2;
+    color: #00ffff;
 }
