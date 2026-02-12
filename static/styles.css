@@ -54,3 +54,8 @@ a:hover {
     padding: 8px;
     z-index: 1000;
 }
+
+.page h3 {
+    margin-top: 25px;
+    margin-left: 25px;
+}
