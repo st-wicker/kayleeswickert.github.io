@@ -14,20 +14,33 @@ antique-white: #ffeedd
 */
 
 * {
-    font-family: monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #4f270a;
 }
 
-body {
+/* body {
     background-color: #003333;
     color: #00ffff;
+} */
+
+body {
+    background: radial-gradient(#025f54, #fffbf5);
+    background-size: 200vw 100vw;
+    /* animation: moveGradient 5s ease infinite; */
 }
+
+/* @keyframes moveGradient {
+    0% {background: linear-gradient(#fffbf5, #025f54); background-size: 800% 800%;}
+    50% {background: linear-gradient(#025f54, #fffbf5); background-size: 800% 800%;}
+    100% {background: linear-gradient(#fffbf5, #025f54); background-size: 800% 800%;}
+} */
 
 #nav-logo {
     height: 40px;
 }
 
 a {
-    color: #00ffff;
+    color: #4f270a;
 }
 
 a:hover {
@@ -55,7 +68,34 @@ a:hover {
     z-index: 1000;
 }
 
-.page h3 {
-    margin-top: 25px;
-    margin-left: 25px;
+.marquee {
+    height: 50px;
+    width: 100%;
+
+    overflow: hidden;
+    position: absolute;
+}
+
+.marquee div {
+    height: 100%;
+    width: 200%;
+
+    overflow: hidden;
+    position: absolute;
+
+    animation: marquee 20s linear infinite;
+}
+
+.marquee span {
+    float: left;
+    width: 25%;
+
+    color: #4f270a;
+    font-family: monospace;
+    font-size: clamp(10px, 3vw, 40px);
+}
+
+@keyframes marquee {
+    0% {left: -100%;}
+    100% {left: 0%;}
 }
