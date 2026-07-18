@@ -14,8 +14,9 @@ antique-white: #ffeedd
 */
 
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #4f270a;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: monospace;
+    color: #00050A;
 }
 
 /* body {
@@ -23,11 +24,32 @@ antique-white: #ffeedd
     color: #00ffff;
 } */
 
-body {
-    background: radial-gradient(#025f54, #fffbf5);
-    background-size: 200vw 100vw;
-    /* animation: moveGradient 5s ease infinite; */
+.mesh-gradient {
+    width: 100%;
+    height: 100vh;
+    background:
+    radial-gradient(ellipse 30% 150% at 0% 10%, #FCAB10 0%, transparent 50%),
+    radial-gradient(ellipse 30% 150% at 0% 10%, #FF007B 0%, transparent 75%),
+    radial-gradient(ellipse 60% 70% at 5% 90%, #FCAB10 0%, transparent 50%),
+    radial-gradient(ellipse 60% 70% at 5% 90%, #FF007B 0%, transparent 75%);
+    /* radial-gradient(ellipse 50% 50% at 50% 80%, #FCAB10 0%, transparent 30%),
+    radial-gradient(ellipse 50% 50% at 50% 80%, #FF007B 0%, transparent 50%); */
+    background-color: #ffffff;
 }
+
+.blob {
+    width: 50%;
+    height: 50vh;
+    left: -50%;
+    background-color: #00050A;
+    border-radius: 58% 42% 40% 60% / 50% 60% 40% 50%;
+}
+
+/* body {
+    background: radial-gradient(#17EBD5, #00050A);
+    background-size: 200vw 100vw; */
+    /* animation: moveGradient 5s ease infinite; */
+/* } */
 
 /* @keyframes moveGradient {
     0% {background: linear-gradient(#fffbf5, #025f54); background-size: 800% 800%;}
@@ -40,11 +62,13 @@ body {
 }
 
 a {
-    color: #4f270a;
+    color: #00050A;
 }
 
 a:hover {
-    color: #ff8000;
+    color: #17EBD5;
+    background-color: #00050A;
+    border-radius: 58% 42% 40% 60% / 50% 60% 40% 50%;
 }
 
 .navbar {
@@ -83,14 +107,14 @@ a:hover {
     overflow: hidden;
     position: absolute;
 
-    animation: marquee 20s linear infinite;
+    animation: marquee 40s linear infinite;
 }
 
 .marquee span {
     float: left;
     width: 25%;
 
-    color: #4f270a;
+    color: #00050A;
     font-family: monospace;
     font-size: clamp(10px, 3vw, 40px);
 }
