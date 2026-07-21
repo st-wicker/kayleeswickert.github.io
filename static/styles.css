@@ -16,34 +16,75 @@ antique-white: #ffeedd
 * {
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: monospace;
-    color: #00050A;
+    color: #f2f2f2;
+    text-shadow: -1px 1px #00050A;
 }
-
-/* body {
-    background-color: #003333;
-    color: #00ffff;
-} */
 
 .mesh-gradient {
     width: 100%;
     height: 100vh;
     background:
-    radial-gradient(ellipse 30% 150% at 0% 10%, #FCAB10 0%, transparent 50%),
-    radial-gradient(ellipse 30% 150% at 0% 10%, #FF007B 0%, transparent 75%),
-    radial-gradient(ellipse 60% 70% at 5% 90%, #FCAB10 0%, transparent 50%),
-    radial-gradient(ellipse 60% 70% at 5% 90%, #FF007B 0%, transparent 75%);
-    /* radial-gradient(ellipse 50% 50% at 50% 80%, #FCAB10 0%, transparent 30%),
-    radial-gradient(ellipse 50% 50% at 50% 80%, #FF007B 0%, transparent 50%); */
-    background-color: #ffffff;
+    radial-gradient(ellipse 200% 200% at 0% 10%, #FCAB10 0%, transparent 50%),
+    radial-gradient(ellipse 120% 100% at 60% 110%, #FCAB10 0%, transparent 50%),
+    radial-gradient(ellipse 90% 300% at 100% 0%, #FCAB10 0%, transparent 50%),
+    radial-gradient(ellipse 200% 200% at 0% 10%, #FF007B 0%, transparent 75%),
+    radial-gradient(ellipse 120% 100% at 60% 110%, #FF007B 0%, transparent 75%),
+    radial-gradient(ellipse 90% 300% at 100% 0%, #FF007B 0%, transparent 75%);
+    background-color: #ffaed5;
 }
 
-.blob {
-    width: 50%;
-    height: 50vh;
-    left: -50%;
-    background-color: #00050A;
-    border-radius: 58% 42% 40% 60% / 50% 60% 40% 50%;
+.mesh-gradient-alt1 {
+    width: 100%;
+    height: 100vh;
+    background:
+    radial-gradient(ellipse 200% 200% at 0% 10%, #17EBD5 0%, transparent 50%),
+    radial-gradient(ellipse 120% 100% at 60% 110%, #17EBD5 0%, transparent 50%),
+    radial-gradient(ellipse 90% 300% at 100% 0%, #17EBD5 0%, transparent 50%),
+    radial-gradient(ellipse 200% 200% at 0% 10%, #48FF00 0%, transparent 75%),
+    radial-gradient(ellipse 120% 100% at 60% 110%, #48FF00 0%, transparent 75%),
+    radial-gradient(ellipse 90% 300% at 100% 0%, #48FF00 0%, transparent 75%);
+    background-color: #f2f2f2;
 }
+
+.mesh-gradient-alt2 {
+    width: 100%;
+    height: 100vh;
+    background:
+    radial-gradient(ellipse 200% 200% at 0% 10%, #C10FFC 0%, transparent 50%),
+    radial-gradient(ellipse 120% 100% at 60% 110%, #C10FFC 0%, transparent 50%),
+    radial-gradient(ellipse 90% 300% at 100% 0%, #C10FFC 0%, transparent 50%),
+    radial-gradient(ellipse 200% 200% at 0% 10%, #FFD500 0%, transparent 75%),
+    radial-gradient(ellipse 120% 100% at 60% 110%, #FFD500 0%, transparent 75%),
+    radial-gradient(ellipse 90% 300% at 100% 0%, #FFD500 0%, transparent 75%);
+    background-color: #f2f2f2;
+}
+
+.mesh-gradient-dark {
+    width: 100%;
+    height: 100vh;
+    background:
+    radial-gradient(ellipse 200% 200% at 0% 10%, #00050A 0%, #52008D 50%),
+    radial-gradient(ellipse 120% 100% at 60% 110%, #00050A 0%, #52008D 50%),
+    radial-gradient(ellipse 90% 300% at 100% 0%, #00050A 0%, #52008D 50%),
+    radial-gradient(ellipse 200% 200% at 0% 10%, #00050A 0%, #52008D 75%),
+    radial-gradient(ellipse 120% 100% at 60% 110%, #00050A 0%, #52008D 75%),
+    radial-gradient(ellipse 90% 300% at 100% 0%, #00050A 0%, #52008D 75%);
+    background-color: #004CFF;
+}
+
+/* .blob {
+    width: 40vw;
+    height: 40vh;
+
+    position: absolute;
+    top: 30vh;
+    left: 50vw;
+
+    background: #00050A;
+    /* radial-gradient(#FCAB10 0%, transparent 50%), radial-gradient(#FF007B 0%, transparent 75%); */
+    /* filter: blur(15px); */
+    /* border-radius: 5% 4% 4% 6% / 1% 6% 4% 5%; 
+} */
 
 /* body {
     background: radial-gradient(#17EBD5, #00050A);
@@ -62,13 +103,14 @@ antique-white: #ffeedd
 }
 
 a {
-    color: #00050A;
+    color: #f2f2f2;
 }
 
 a:hover {
     color: #17EBD5;
     background-color: #00050A;
     border-radius: 58% 42% 40% 60% / 50% 60% 40% 50%;
+    text-shadow: -1px 1px #f2f2f2;
 }
 
 .navbar {
@@ -79,7 +121,7 @@ a:hover {
     margin: 5px;
     display: inline-block;
     font-family: monospace;
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 .footer {
@@ -114,7 +156,7 @@ a:hover {
     float: left;
     width: 25%;
 
-    color: #00050A;
+    color: #f2f2f2;
     font-family: monospace;
     font-size: clamp(10px, 3vw, 40px);
 }
